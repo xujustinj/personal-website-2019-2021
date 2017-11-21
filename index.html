@@ -6,22 +6,43 @@
         <link rel="icon" href="index/icon.png">
 
         <style>
-            .centre {position: absolute;
-                     top: 50%;
-                     left: 50%;
-                     transform: translateX(-50%) translateY(-50%);}
+            .centre     {position: absolute;
+                         top: 50%;
+                         left: 50%;
+                         transform: translateX(-50%) translateY(-50%);
+                         display: inline-block;}
+            .tile       {height: 160px;
+                         width: 160px;
+                         line-height: 160px;
+                         text-align: center;
+                         border-radius: 16px;}
 
-            a       {text-decoration: none;}
+            .tile:hover {background-color: #FFFFFF50;}
+
+            body        {background-color: #2060A080;}
+            a           {text-decoration: none;}
+            span        {display: inline-block;
+                         vertical-align: middle;
+                         line-height: normal;}
         </style>
     </head>
 
     <body>
         <div class = "centre">
-            <a href="hexagonal_2048/hexagonal_2048.html" target="_blank">
-                <img src="hexagonal_2048/icon.png" alt="Hexagonal 2048">
+            <a href="hexagonal_2048.html">
+                <span class = "tile"><span>
+                    <img src="hexagonal_2048/icon.png" alt="Hexagonal 2048">
+                </span></span>
             </a>
             <a href="https://soundcloud.com/watered-music" target="_blank">
-                <img src="index/icon.png" alt="Water">
+                <span class = "tile"><span>
+                    <img src="index/icon.png" alt="Water">
+                </span></span>
+            </a>
+            <a href="concertino/Concertino 1.1.1.xlsm" target="_blank">
+                <span class = "tile"><span>
+                    <img src="concertino/icon.png" alt="Concertino">
+                </span></span>
             </a>
         </div>
     </body>
