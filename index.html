@@ -3,47 +3,97 @@
     <head>
         <title>Justin's Projects</title>
 
-        <link rel="icon" href="index/icon.png">
+        <link rel="icon" href="icon.png">
+
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Comfortaa">
 
         <style>
+
             .centre     {position: absolute;
                          top: 50%;
                          left: 50%;
                          transform: translateX(-50%) translateY(-50%);
+                         text-align: center;
                          display: inline-block;}
-            .tile       {height: 160px;
-                         width: 160px;
-                         line-height: 160px;
+
+            .tile       {transition: all 0.25s ease;
+                         display: inline-block;
+                         height: 120px;
+                         width: 120px;
+                         line-height: 120px;
                          text-align: center;
                          border-radius: 16px;}
+            .tile:hover {height: 160px;
+                         width: 160px;
+                         line-height: 160px;
+                         background-color: #FFFFFF3F;}
 
-            .tile:hover {background-color: #FFFFFF50;}
+            .upper      {position: absolute;
+                         top: 0%;
+                         left: 50%;
+                         transform: translateX(-50%) translateY(-0%);
+                         display: inline-block;}
 
-            body        {background-color: #2060A080;}
+            .lower      {position: absolute;
+                         top: 100%;
+                         left: 50%;
+                         transform: translateX(-50%) translateY(-100%);
+                         display: inline-block;}
+
+            .quartile   {width: 100%;
+                         height: 25%;}
+
+            .textbox    {margin: 16px;}
+
+            html        {margin: 0;
+                         height: 100%;
+                         background-color: #2060A07F;}
+            body        {margin: 0;
+                         height: 100%;}
+
             a           {text-decoration: none;}
-            span        {display: inline-block;
+            img         {display: inline-block;
                          vertical-align: middle;
                          line-height: normal;}
+
+            h1          {font-family: Comfortaa;
+                         color: #103050FF;
+                         font-size: 40px;}
+            h2          {font-family: Comfortaa;
+                         color: #103050FF;
+                         font-size: 20px;}
+            p           {font-family: Comfortaa;
+                         color: #103050FF;
+                         font-size: 16px;}
         </style>
     </head>
 
     <body>
-        <div class = "centre">
-            <a href="hexagonal_2048.html">
-                <span class = "tile"><span>
-                    <img src="hexagonal_2048/icon.png" alt="Hexagonal 2048">
-                </span></span>
+        <div class="upper quartile">
+            <div class="textbox" id="project_name"></div>
+            <div class="textbox" id="project_implements"></div>
+        </div>
+
+        <div class="centre">
+            <a onmouseover="hover(hexagonal_2048)" onmouseout="hover(normal)" class="tile" href="hexagonal_2048.html">
+                <img width="80%" height="80%" src="hexagonal_2048/icon.png" alt="Hexagonal 2048">
             </a>
-            <a href="https://soundcloud.com/watered-music" target="_blank">
-                <span class = "tile"><span>
-                    <img src="index/icon.png" alt="Water">
-                </span></span>
+            <a onmouseover="hover(water)" onmouseout="hover(normal)" class="tile" href="https://soundcloud.com/watered-music" target="_blank">
+                <img width="80%" height="80%" src="icon.png" alt="Water">
             </a>
-            <a href="concertino/Concertino 1.1.1.xlsm" target="_blank">
-                <span class = "tile"><span>
-                    <img src="concertino/icon.png" alt="Concertino">
-                </span></span>
+            <a onmouseover="hover(concertino)" onmouseout="hover(normal)" class="tile" href="concertino/Concertino 1.1.1.xlsm" target="_blank">
+                <img width="80%" height="80%" src="concertino/icon.png" alt="Concertino">
             </a>
         </div>
+
+        <div class="lower quartile">
+            <div class="textbox" id="project_date"></div>
+            <div class="textbox" style="text-indent: 16px;" id="project_description"></div>
+        </div>
     </body>
+
+    <foot>
+        <script src="events.js"></script>
+    </foot>
+
 </html>
