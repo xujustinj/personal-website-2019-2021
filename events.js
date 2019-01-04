@@ -14,7 +14,7 @@ normal.description = "Hello World! My name is Justin Xu. This site was created t
 var hexagonal_2048 = new Project();
 hexagonal_2048.name = 'Hexagonal 2048';
 hexagonal_2048.date = 'July 2017';
-hexagonal_2048.implements = 'JavaScript';
+hexagonal_2048.implements = 'JavaScript, p5.js';
 hexagonal_2048.description = 'This game applies the rules of the popular game 2048 to a hexagonal grid, rather than a square grid. It uses primarily JavaScript and the p5 library to edit an HTML canvas element that contains the game. This is not the first time someone has made a hexagonal variant of 2048. Nonetheless, this project was constructed from scratch and without consultation of existing versions. Use the QWEASD keys to control the board.';
 
 var water = new Project();
