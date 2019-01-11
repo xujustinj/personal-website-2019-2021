@@ -16,7 +16,6 @@ function Project(id, name, date, implements, description, link, img) {
     let tile = document.createElement('a');
     tile.setAttribute('class',       'tile');
     tile.setAttribute('onmouseover', 'hover(' + id + ');');
-    tile.setAttribute('onmouseout',  'hover(normal);');
     tile.setAttribute('href',        link);
 
     tiles.appendChild(tile);
