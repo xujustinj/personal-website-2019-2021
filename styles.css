@@ -1,9 +1,16 @@
-.centre     {position: absolute;
+.title      {width: 100%;
+             display: inline-block;
+             background-color: #102030;
+             color: #E8F0F8;}
+
+.tilesOuter {position: relative;
              width: 100%;
-             top: 40%;
-             left: 50%;
+             height: 200px;
+             text-align: center;}
+
+.tilesInner {position: absolute;
+             top: 50%;
              transform: translateX(-50%) translateY(-50%);
-             text-align: center;
              display: inline-block;}
 
 .tile       {transition: all 0.10s ease;
@@ -21,16 +28,7 @@
 .icon       {height: 80%;
              width: 80%;}
 
-.upper      {position: absolute;
-             width: 100%;
-             height: 20%;
-             display: inline-block;
-             background-color: #102030;
-             color: #E8F0F8;}
-
-.lower      {position: absolute;
-             height: 40%;
-             top: 60%;
+.lower      {position: relative;
              width: 80%;
              left: 10%;
              display: inline-block;}

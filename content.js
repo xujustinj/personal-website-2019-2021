@@ -14,7 +14,7 @@ const adetos = new Project(
     'ADETOS',
     'Apr 2017 - Nov 2018',
     'Google Sheets, Google Script',
-    'Version 3.1 of a digital assistant for organizing double-elimination'
+    'Version 3.1 of a digital assistant for organizing double-elimination '
     + 'tournaments. It supports the creation of arbitrarily many separate '
     + 'brackets with up to 64 players each, distributing byes fairly between '
     + 'teams. While running the tournament itself, it automatically '
@@ -81,6 +81,6 @@ const concertino = new Project(
     + 'where I could display the calendar on a sheet. In hindsight, it was '
     + 'probably better off building Concertino in Access and using VBA to '
     + 'emulate Excel instead.',
-    'concertino/Concertino 1.1.1.xlsm',
+    'https://github.com/xujustinj/Concertino',
     'concertino.png'
 );
