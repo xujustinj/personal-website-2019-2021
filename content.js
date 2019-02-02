@@ -64,7 +64,7 @@ const water = new Project(
     + 'a goal which I ultimately fell short on, lacking sufficient technical '
     + 'skill and knowledge. The songs I made have become some of my fondest '
     + 'high school nostalgia.',
-    'https://soundcloud.com/watered-music',
+    'https://soundcloud.com/watered-music/',
     'water.png'
 );
 
@@ -81,6 +81,6 @@ const concertino = new Project(
     + 'where I could display the calendar on a sheet. In hindsight, it was '
     + 'probably better off building Concertino in Access and using VBA to '
     + 'emulate Excel instead.',
-    'https://github.com/xujustinj/Concertino',
+    'https://xujustinj.github.io/Concertino/',
     'concertino.png'
 );
