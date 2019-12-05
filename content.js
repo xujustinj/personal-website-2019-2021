@@ -1,7 +1,7 @@
 const normal = {
     name:        'Justin Xu',
     date:        'Hover over the icons above to see more...',
-    implements:  'A first-year computer science student who enjoys problem '
+    implements:  'A second-year computer science student who enjoys problem '
                  + 'solving, music, and washing dishes.',
     description: ''
 };
