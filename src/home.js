@@ -23,7 +23,7 @@ import WaterparkIcon from "./img/waterpark-icon.png";
 
 const NavBar = () => (
   <Menu borderless inverted>
-    <Menu.Item as="a" href="https://github.com/xujustinj/" icon="github">
+    <Menu.Item as="a" href="https://github.com/xujustinj/">
       <Icon name="github" />
       &nbsp; GitHub
     </Menu.Item>
