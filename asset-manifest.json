@@ -1,19 +1,26 @@
 {
-  "main.css": "/static/css/main.0da55253.chunk.css",
-  "main.js": "/static/js/main.846da076.chunk.js",
-  "main.js.map": "/static/js/main.846da076.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-  "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-  "static/js/2.57bdcd2c.chunk.js": "/static/js/2.57bdcd2c.chunk.js",
-  "static/js/2.57bdcd2c.chunk.js.map": "/static/js/2.57bdcd2c.chunk.js.map",
-  "index.html": "/index.html",
-  "precache-manifest.8d47fdafa53976321a990ac1e3a726d3.js": "/precache-manifest.8d47fdafa53976321a990ac1e3a726d3.js",
-  "service-worker.js": "/service-worker.js",
-  "static/css/main.0da55253.chunk.css.map": "/static/css/main.0da55253.chunk.css.map",
-  "static/media/adetos-icon.png": "/static/media/adetos-icon.baf2b8fb.png",
-  "static/media/formal-avatar.png": "/static/media/formal-avatar.619e377f.png",
-  "static/media/hexagonal-2048-icon.png": "/static/media/hexagonal-2048-icon.4a1e8076.png",
-  "static/media/stairway-constants-icon.png": "/static/media/stairway-constants-icon.c3d82809.png",
-  "static/media/swift-record-generator-icon.png": "/static/media/swift-record-generator-icon.53986348.png",
-  "static/media/waterpark-icon.png": "/static/media/waterpark-icon.10f9b1c9.png"
+  "files": {
+    "main.css": "/static/css/main.edd8fe42.chunk.css",
+    "main.js": "/static/js/main.9cf68d04.chunk.js",
+    "main.js.map": "/static/js/main.9cf68d04.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.e2508fc9.js",
+    "runtime-main.js.map": "/static/js/runtime-main.e2508fc9.js.map",
+    "static/js/2.5bcace08.chunk.js": "/static/js/2.5bcace08.chunk.js",
+    "static/js/2.5bcace08.chunk.js.map": "/static/js/2.5bcace08.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.edd8fe42.chunk.css.map": "/static/css/main.edd8fe42.chunk.css.map",
+    "static/js/2.5bcace08.chunk.js.LICENSE.txt": "/static/js/2.5bcace08.chunk.js.LICENSE.txt",
+    "static/media/adetos-icon.9ff4e241.png": "/static/media/adetos-icon.9ff4e241.png",
+    "static/media/formal-avatar.2d64734f.png": "/static/media/formal-avatar.2d64734f.png",
+    "static/media/hexagonal-2048-icon.72fe4678.png": "/static/media/hexagonal-2048-icon.72fe4678.png",
+    "static/media/stairway-constants-icon.2391a213.png": "/static/media/stairway-constants-icon.2391a213.png",
+    "static/media/swift-record-generator-icon.cb594296.png": "/static/media/swift-record-generator-icon.cb594296.png",
+    "static/media/waterpark-icon.423ae70d.png": "/static/media/waterpark-icon.423ae70d.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e2508fc9.js",
+    "static/js/2.5bcace08.chunk.js",
+    "static/css/main.edd8fe42.chunk.css",
+    "static/js/main.9cf68d04.chunk.js"
+  ]
 }
