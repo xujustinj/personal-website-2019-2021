@@ -12,6 +12,8 @@ import {
 } from "semantic-ui-react";
 import "./home.css";
 
+import Resume from "./resume/current.pdf";
+
 import FormalAvatar from "./img/formal-avatar.png";
 import ADETOSIcon from "./img/adetos-icon.png";
 import AsteriaIcon from "./img/asteria-icon.png";
@@ -27,7 +29,7 @@ const NavBar = () => (
       <Icon name="github" />
       &nbsp; GitHub
     </Menu.Item>
-    <Menu.Item as="a" href="/resume">
+    <Menu.Item as="a" href={Resume}>
       <Icon name="newspaper" /> Résumé
     </Menu.Item>
     <Menu.Item as="a" href="https://www.linkedin.com/in/xujustinj/">
