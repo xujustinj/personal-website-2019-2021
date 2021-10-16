@@ -1,10 +1,23 @@
-import styled from 'styled-components'
+import Head from "next/head";
+import React from "react";
+import { createGlobalStyle } from "styled-components";
 
-const Title = styled.h1`
-  color: red;
-  font-size: 50px;
-`
+const GlobalStyle = createGlobalStyle`
+* {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+`;
 
 export default function Home() {
-  return <Title>My page</Title>
+  return (
+    <>
+      <Head>
+        <title>Justin Xu</title>
+      </Head>
+      <>
+        <GlobalStyle />
+        <h1>Justin Xu</h1>
+      </>
+    </>
+  );
 }
