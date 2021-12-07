@@ -3,12 +3,12 @@ p {
 }
 
 #title {
-  font-size: 32pt;
+  font-size: 36pt;
 }
 #avatar {
   max-width: 20vw;
   margin-right: min(32px, 5vw);
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 #navbar {
   padding: 1vh 0;

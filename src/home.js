@@ -14,7 +14,7 @@ import "./home.css";
 
 import Resume from "./resume/current.pdf";
 
-import FormalAvatar from "./img/formal-avatar.png";
+import InformalAvatar from "./img/informal-avatar.png";
 import ADETOSIcon from "./img/adetos-icon.png";
 import AsteriaIcon from "./img/asteria-icon.png";
 import Hexagonal2048Icon from "./img/hexagonal-2048-icon.png";
@@ -43,7 +43,7 @@ const Head = () => (
     <NavBar />
     <Container text>
       <Header id="title" inverted>
-        <Image id="avatar" avatar src={FormalAvatar} />
+        <Image id="avatar" avatar src={InformalAvatar} />
         Justin Xu
       </Header>
     </Container>
@@ -56,7 +56,7 @@ const Foot = () => (
       <small>
         Made with React and Semantic UI.
         <br />
-        Last updated Monday May 17, 2021.
+        Last updated Monday December 6, 2021.
       </small>
     </Container>
   </Segment>
@@ -105,7 +105,7 @@ const Asteria = {
   projectURL: "https://github.com/xujustinj/Asteria",
   title: "Asteria",
   description:
-    "A fast machine learning library implemented from scratch. Currently working towards character recognition.",
+    "An adventure to learn neural networks by implementing a fast FNN library from scratch.",
   labels: [
     { name: "AI", color: techniqueColor },
     { name: "C++", color: languageColor },
@@ -114,7 +114,7 @@ const Asteria = {
 };
 const Hexagonal2048 = {
   iconURL: Hexagonal2048Icon,
-  projectURL: "https://xujustinj.github.io/Hexagonal-2048/",
+  projectURL: "https://justinxu.me/hexagonal-2048/",
   title: "Hexagonal 2048",
   description:
     "My introductory project to JavaScript, inspired by my love for the original game. Swipe or use QWEASD to control the board.",
@@ -125,12 +125,14 @@ const Hexagonal2048 = {
 };
 const StairwayConstants = {
   iconURL: StairwayConstantsIcon,
+  projectURL: "https://github.com/xujustinj/stairway-constants/",
   title: "Stairway Constants",
   description:
-    "A massive guide to every constant featured on the decorative number line recently installed on UW campus, published across 5 installments of UW mathNEWS volume 142.",
+    "A massive guide to every constant featured on the decorative number line in a stairwell in UW campus. Originally published in mathNEWS, now soon to be a website.",
   labels: [
     { name: "Writing", color: techniqueColor },
-    { name: "Mathematics", color: techniqueColor },
+    { name: "Math", color: techniqueColor },
+    { name: "Svelte", color: toolColor },
   ],
 };
 const SwiftRecordGenerator = {
@@ -157,7 +159,7 @@ const Waterpark = {
   projectURL: "https://github.com/loolabs/waterpark",
   title: "Waterpark",
   description:
-    "Loo Labs' first product: a web app that helps UWaterloo students discover clubs and events. We're overengineering this to the moon!",
+    "Loo Labs' first product: a web app that helps UWaterloo students discover clubs and events. We're overengineering this to the moon! Project currently on pause.",
   labels: [
     { name: "TypeScript", color: languageColor },
     { name: "Express", color: toolColor },
@@ -172,11 +174,12 @@ const Home = () => (
     <Segment id="homeBody" vertical>
       <Container text>
         <p>
-          A 3rd year CS student at UWaterloo spending the prime years of his
-          life watching lectures and working at software engineering co-op
-          internships. In his free time, he can be found leading backend
-          development at <a href="https://loolabs.org/">Loo Labs</a> and being
-          terrible at video games. Favourite tech stack: Google Sheets.
+          A 4th year CS co-op student at UWaterloo spending the prime years of
+          his life watching lectures and seeking software engineering
+          internships. In his free time, he is terrible at video games.{" "}
+          <a href="https://medium.com/@xujustinj/my-favourite-tech-stack-is-google-sheets-79a797887b80">
+            Favourite tech stack: Google Sheets.
+          </a>
         </p>
       </Container>
 
@@ -186,8 +189,8 @@ const Home = () => (
       </Divider>
       <Container text>
         <Card.Group centered>
+          <ProjectCard project={StairwayConstants}></ProjectCard>
           <ProjectCard project={Waterpark}></ProjectCard>
-          <ProjectCard project={Asteria}></ProjectCard>
         </Card.Group>
       </Container>
 
@@ -197,7 +200,7 @@ const Home = () => (
       </Divider>
       <Container text>
         <Card.Group centered>
-          <ProjectCard project={StairwayConstants}></ProjectCard>
+          <ProjectCard project={Asteria}></ProjectCard>
           <ProjectCard project={SwiftRecordGenerator}></ProjectCard>
           <ProjectCard project={UlamSpiral}></ProjectCard>
           <ProjectCard project={Hexagonal2048}></ProjectCard>
