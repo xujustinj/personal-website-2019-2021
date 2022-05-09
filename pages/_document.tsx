@@ -6,6 +6,7 @@ import Document, {
   NextScript,
 } from "next/document";
 import { ServerStyleSheet } from "styled-components";
+import Favicons from "../components/Favicons";
 
 // hacky-looking Document class that sets up styled-components
 export default class _Document extends Document {
@@ -38,6 +39,7 @@ export default class _Document extends Document {
             href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap"
             rel="stylesheet"
           />
+          <Favicons />
         </Head>
         <body>
           <Main />
