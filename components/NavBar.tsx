@@ -59,7 +59,7 @@ const Logo = () => (
     <LogoContainer>
       <p>Justin</p>
       <ShieldContainer>
-        <Image src={Shield} width={12} height={18} />
+        <Image src={Shield} alt={"logo"} width={12} height={18} />
       </ShieldContainer>
       <p>Xu</p>
     </LogoContainer>

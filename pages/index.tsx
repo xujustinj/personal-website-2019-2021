@@ -81,7 +81,7 @@ export default function Home() {
       </Section>
 
       <Section foreground="black" background="white" id="iam">
-        <SectionHeading>I'm...</SectionHeading>
+        <SectionHeading>{"I'm..."}</SectionHeading>
         <EmojiBulletItem bullet={"🎓"}>
           a 4th year Honours Computer Science student in the co-op program at
           the University of Waterloo (graduating April 2023)
