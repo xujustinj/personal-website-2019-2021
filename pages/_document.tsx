@@ -6,7 +6,7 @@ import Document, {
   NextScript,
 } from "next/document";
 import { ServerStyleSheet } from "styled-components";
-import Favicons from "../components/Favicons";
+import { Favicons } from "../components/Favicons";
 
 // hacky-looking Document class that sets up styled-components
 export default class _Document extends Document {

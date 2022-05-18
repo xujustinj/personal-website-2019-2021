@@ -21,3 +21,5 @@ npm install
 - [How to update each dependency in package.json to the latest version?](https://stackoverflow.com/a/22849716)
 - [How to remove margin space around body...](https://stackoverflow.com/a/9547315)
 - [Favicon for Next.js and TypeScript](https://dev.to/jcubic/favicon-for-next-js-and-typescript-9gk)
+- [Linking to an element](https://stackoverflow.com/a/2835151)
+- [Flipping a card](https://codepen.io/mondal10/pen/WNNEvjV)
