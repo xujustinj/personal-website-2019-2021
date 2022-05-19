@@ -8,7 +8,7 @@ import { Section, SectionHeading } from "../components/Section";
 import * as Items from "../data/Items";
 import ProfileMetrotown from "../public/assets/profile-metrotown.jpg";
 import { adapt } from "../styles/Adaptive";
-import { Hues, muted } from "../styles/Colours";
+import { Colour, Hue, Saturation, Value } from "../styles/Colours";
 
 const HeaderContainer = styled.div`
   display: flex;
@@ -60,7 +60,11 @@ const HelloText = styled.h2`
 export default function Home() {
   return (
     <>
-      <Section foreground="white" background={muted(Hues.blue)} id="intro">
+      <Section
+        foreground="white"
+        background={Colour({ h: "blue", s: "muted", v: "light" })}
+        id="intro"
+      >
         <HeaderContainer>
           <HeaderIcon>
             <Image
@@ -109,7 +113,11 @@ export default function Home() {
         </EmojiBulletItem>
       </Section>
 
-      <Section foreground="white" background={muted(Hues.orange)} id="doing">
+      <Section
+        foreground="white"
+        background={Colour({ h: "orange", s: "muted", v: "light" })}
+        id="doing"
+      >
         <SectionHeading>Currently Doing</SectionHeading>
         <Card size={240} item={Items.StairwayConstants}></Card>
       </Section>

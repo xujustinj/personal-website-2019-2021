@@ -1,16 +1,18 @@
 import { Tag } from "../model/Tag";
-import { Hues, vibrant } from "../styles/Colours";
+import { Colour, Hue } from "../styles/Colours";
 
 const TagCategory = (
   names: Record<string, string>,
-  colour: string
-): Record<string, Tag> =>
-  Object.fromEntries(
+  h: Hue
+): Record<string, Tag> => {
+  const colour = Colour({ h, s: "vibrant" });
+  return Object.fromEntries(
     Object.entries<string>(names).map(([id, name]) => [
       id,
       { name, colour } as Tag,
     ])
   );
+};
 
 enum Languages {
   CPP = "C++",
@@ -43,7 +45,7 @@ enum Topics {
 }
 
 export const Tags = {
-  ...TagCategory(Languages, vibrant(Hues.red)),
-  ...TagCategory(Technologies, vibrant(Hues.orange)),
-  ...TagCategory(Topics, vibrant(Hues.blue)),
+  ...TagCategory(Languages, "red"),
+  ...TagCategory(Technologies, "orange"),
+  ...TagCategory(Topics, "blue"),
 } as const;
