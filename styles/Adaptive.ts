@@ -1,4 +1,4 @@
-const BREAKPOINT = "768px";
+const BREAKPOINT = "640px";
 
 export const adapt = (styles: { mobile: string; desktop: string }) => `
   ${styles.mobile ?? ""}

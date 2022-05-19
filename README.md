@@ -22,4 +22,5 @@ npm install
 - [How to remove margin space around body...](https://stackoverflow.com/a/9547315)
 - [Favicon for Next.js and TypeScript](https://dev.to/jcubic/favicon-for-next-js-and-typescript-9gk)
 - [Linking to an element](https://stackoverflow.com/a/2835151)
-- [Flipping a card](https://codepen.io/mondal10/pen/WNNEvjV)
+- [Custom image for using AWS Amplify with Git LFS](https://hub.docker.com/r/slawekkolodziej/aws-amplify-lfs)
+- [FontAwesome icons in Next.js](https://fontawesome.com/docs/web/use-with/react/use-with#next-js)

@@ -1,7 +1,13 @@
+import { config } from "@fortawesome/fontawesome-svg-core";
+import "@fortawesome/fontawesome-svg-core/styles.css";
 import type { AppProps } from "next/app";
 import Head from "next/head";
-import NavBar from "../components/NavBar";
 import { createGlobalStyle } from "styled-components";
+import { Footer } from "../components/Footer";
+import NavBar from "../components/NavBar";
+import { Colour } from "../styles/Colours";
+
+config.autoAddCss = false;
 
 const GlobalStyle = createGlobalStyle`
 * {
@@ -27,6 +33,10 @@ function App({ Component, pageProps }: AppProps) {
       <GlobalStyle />
       <NavBar {...pageProps} />
       <Component {...pageProps} />
+      <Footer
+        background={Colour({ h: "blue", s: "faded", v: "dark" })}
+        foreground="white"
+      />
     </>
   );
 }
