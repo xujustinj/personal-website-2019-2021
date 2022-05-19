@@ -47,5 +47,5 @@ enum Topics {
 export const Tags = {
   ...TagCategory(Languages, "red"),
   ...TagCategory(Technologies, "orange"),
-  ...TagCategory(Topics, "blue"),
+  ...TagCategory(Topics, "purple"),
 } as const;

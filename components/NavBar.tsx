@@ -42,7 +42,7 @@ const LogoContainer = styled.span`
   padding: 4px;
 
   p {
-    font-size: 18px;
+    font-size: 14pt;
     margin: 0;
   }
 
@@ -68,7 +68,7 @@ const Logo = () => (
 
 const PageTitle = styled.h1`
   margin: 0;
-  font-size: 18px;
+  font-size: 16pt;
 `;
 
 export interface NavBarProps {

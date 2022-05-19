@@ -9,7 +9,6 @@ import Link from "next/link";
 import { ReactNode } from "react";
 import styled from "styled-components";
 import { adapt } from "../styles/Adaptive";
-import { primary } from "../styles/Colours";
 import { Section, SectionProps } from "./Section";
 
 const IconTextLink = styled.a`
@@ -29,6 +28,7 @@ interface FooterLinkProps {
 const FooterLink = (props: FooterLinkProps) => (
   <Link href={props.href} passHref>
     <IconTextLink>
+      {/* fa-fw: fixed width */}
       <FontAwesomeIcon icon={props.icon} className={"fa-fw"} />
       {props.children}
     </IconTextLink>

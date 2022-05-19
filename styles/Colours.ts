@@ -4,7 +4,7 @@ const Hues = {
   yellow: 60,
   green: 150,
   blue: 210,
-  purple: 300,
+  purple: 270,
 };
 export type Hue = keyof typeof Hues;
 

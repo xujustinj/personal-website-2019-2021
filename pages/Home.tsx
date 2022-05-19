@@ -10,51 +10,61 @@ import ProfileMetrotown from "../public/assets/profile-metrotown.jpg";
 import { adapt } from "../styles/Adaptive";
 import { Colour } from "../styles/Colours";
 
-const HeaderContainer = styled.div`
+const IntroContainer = styled.div`
   display: flex;
   ${adapt({
     mobile: `
       flex-direction: column;
     `,
     desktop: `
-      flex-direction: row-reverse;
+      flex-direction: row;
     `,
   })}
-  gap: 16px;
+  gap: 24px;
   align-items: center;
 `;
 
-const HeaderIcon = styled.div`
+const IntroIcon = styled.div`
   flex-grow: 0;
   flex-shrink: 0;
-  width: min(240px, 40vw);
-  height: min(240px, 40vw);
+  width: min(200px, 40vw);
+  height: min(200px, 40vw);
   border-radius: 8px;
   overflow: hidden;
 `;
 
-const HeaderContent = styled.div`
+const IntroContent = styled.div`
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   flex-shrink: 1;
   align-items: flex-start;
   gap: 8px;
-
-  * {
-    margin: 0;
-  }
 `;
 
 const HelloText = styled.h2`
   ${adapt({
     mobile: `
-      font-size: 24px;
+      font-size: 24pt;
     `,
     desktop: `
-      font-size: 32px;
+      font-size: 30pt;
     `,
   })}
+  line-height: 100%;
+  margin: 0;
+`;
+
+const IntroText = styled.p`
+  ${adapt({
+    mobile: `
+      font-size: 12pt;
+    `,
+    desktop: `
+      font-size: 14pt;
+    `,
+  })}
+  margin: 0;
 `;
 
 export const Home = () => (
@@ -64,51 +74,61 @@ export const Home = () => (
       background={Colour({ h: "blue", s: "muted", v: "light" })}
       id="intro"
     >
-      <HeaderContainer>
-        <HeaderIcon>
+      <IntroContainer>
+        <IntroIcon>
           <Image
             src={ProfileMetrotown}
             alt={"Picture of Justin"}
-            width={240}
-            height={240}
+            width={200}
+            height={200}
           />
-        </HeaderIcon>
-        <HeaderContent>
-          <HelloText>Hello! 👋🏼</HelloText>
-          <p>
+        </IntroIcon>
+        <IntroContent>
+          <HelloText>Hi!👋🏼</HelloText>
+          <IntroText>
             My name is <b>Justin</b> (he/him), and this is where I show off{" "}
-            everything <del>I want employers to know</del> about me.
-          </p>
-        </HeaderContent>
-      </HeaderContainer>
+            everything{" "}
+            <del style={{ color: Colour({ v: "lighter" }) }}>
+              I want employers to know
+            </del>{" "}
+            about me.
+          </IntroText>
+        </IntroContent>
+      </IntroContainer>
     </Section>
 
     <Section foreground="black" background="white" id="iam">
-      <SectionHeading>{"I'm..."}</SectionHeading>a 4th year Honours Computer
-      Science student in the co-op program at
+      <SectionHeading>{"I'm..."}</SectionHeading>
       <EmojiBulletItem bullet={"🎓"}>
-        the University of Waterloo (graduating April 2023)
+        <IntroText>
+          a 4th year Honours Computer Science student in the co-op program at
+          the University of Waterloo (graduating April 2023)
+        </IntroText>
       </EmojiBulletItem>
       <EmojiBulletItem bullet={"💻"}>
-        proficient in web development,{" "}
-        <Link
-          href={
-            "https://medium.com/@xujustinj/my-favourite-tech-stack-is-google-sheets-79a797887b80"
-          }
-        >
-          spreadsheet hacking
-        </Link>
-        , and more
+        <IntroText>
+          proficient in web development,{" "}
+          <Link
+            href={
+              "https://medium.com/@xujustinj/my-favourite-tech-stack-is-google-sheets-79a797887b80"
+            }
+          >
+            spreadsheet hacking
+          </Link>
+          , and more
+        </IntroText>
       </EmojiBulletItem>
       <EmojiBulletItem bullet={"🧐"}>
-        a perfectionist who takes too much ownership (haters call it
-        workaholism)
+        <IntroText>
+          a perfectionist who takes too much ownership (haters call it
+          workaholism)
+        </IntroText>
       </EmojiBulletItem>
       <EmojiBulletItem bullet={"🕹️"}>
-        bad at video games and bouldering
+        <IntroText>bad at video games and bouldering</IntroText>
       </EmojiBulletItem>
       <EmojiBulletItem bullet={"🎹"}>
-        something of a musician myself
+        <IntroText>something of a musician myself</IntroText>
       </EmojiBulletItem>
     </Section>
 
@@ -118,7 +138,8 @@ export const Home = () => (
       id="doing"
     >
       <SectionHeading>Currently Doing</SectionHeading>
-      <Card size={240} item={Items.StairwayConstants}></Card>
+      <Card size={200} item={Items.StairwayConstants}></Card>
+      <Card size={200} item={Items.ProjectCellar}></Card>
     </Section>
   </>
 );
