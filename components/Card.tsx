@@ -143,7 +143,7 @@ export const Card = ({ size, item }: CardProps) => (
         {item.links === undefined || (
           <CardLinks>
             {item.links.map(({ url, icon }) => (
-              <Link href={url}>
+              <Link key={icon.iconName} href={url}>
                 {/* fa-fw: fixed width */}
                 <Icon icon={icon} className="fa-fw" />
               </Link>
@@ -162,11 +162,3 @@ export const Card = ({ size, item }: CardProps) => (
     </CardContent>
   </CardContainer>
 );
-
-export const CardGrid = styled.div`
-  display: grid;
-  grid-gap: 16px;
-  justify-content: center;
-  margin: auto;
-  grid-template-columns: repeat(auto-fit, 200px);
-`;

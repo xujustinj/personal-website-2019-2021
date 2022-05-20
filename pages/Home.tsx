@@ -2,10 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import styled from "styled-components";
-import { Card, CardGrid } from "../components/Card";
+import { CardGrid } from "../components/CardGrid";
 import { EmojiBulletItem } from "../components/EmojiBullet";
 import { Section, SectionHeading } from "../components/Section";
-import * as Items from "../data/Items";
+import { Items } from "../data/Items";
 import ProfileMetrotown from "../public/assets/profile-metrotown.jpg";
 import { adapt } from "../styles/Adaptive";
 import { Colour } from "../styles/Colours";
@@ -138,10 +138,7 @@ export const Home = () => (
       id="doing"
     >
       <SectionHeading>Current Stuff</SectionHeading>
-      <CardGrid>
-        <Card size={200} item={Items.StairwayConstants}></Card>
-        <Card size={200} item={Items.ProjectCellar}></Card>
-      </CardGrid>
+      <CardGrid items={Items.filter((item) => item.status === "ongoing")} />
     </Section>
 
     <Section
@@ -150,9 +147,7 @@ export const Home = () => (
       id="did"
     >
       <SectionHeading>Past Stuff</SectionHeading>
-      <CardGrid>
-        <Card size={200} item={Items.Waterpark}></Card>
-      </CardGrid>
+      <CardGrid items={Items.filter((item) => item.status === "ended")} />
     </Section>
   </>
 );

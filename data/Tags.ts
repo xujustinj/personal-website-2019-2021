@@ -40,7 +40,10 @@ enum Technologies {
 
 enum Topics {
   AI = "AI",
+  ENGINEERING = "Engineering",
   GRAPHICS = "Graphics",
+  HCI = "HCI",
+  LEADERSHIP = "Leadership",
   MATH = "Mathematics",
   WRITING = "Writing",
 }
