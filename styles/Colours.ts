@@ -2,7 +2,7 @@ const Hues = {
   red: 0,
   orange: 30,
   yellow: 60,
-  green: 150,
+  green: 120,
   blue: 210,
   purple: 270,
 };

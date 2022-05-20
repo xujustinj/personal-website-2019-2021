@@ -1,7 +1,4 @@
-import {
-  FontAwesomeIcon,
-  FontAwesomeIconProps,
-} from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import Link from "next/link";
 import styled from "styled-components";
@@ -124,7 +121,7 @@ const CardTags = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 4px;
 `;
 
 const Icon = styled(FontAwesomeIcon)`
@@ -165,3 +162,11 @@ export const Card = ({ size, item }: CardProps) => (
     </CardContent>
   </CardContainer>
 );
+
+export const CardGrid = styled.div`
+  display: grid;
+  grid-gap: 16px;
+  justify-content: center;
+  margin: auto;
+  grid-template-columns: repeat(auto-fit, 200px);
+`;

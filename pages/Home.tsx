@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import styled from "styled-components";
-import { Card } from "../components/Card";
+import { Card, CardGrid } from "../components/Card";
 import { EmojiBulletItem } from "../components/EmojiBullet";
 import { Section, SectionHeading } from "../components/Section";
 import * as Items from "../data/Items";
@@ -134,12 +134,25 @@ export const Home = () => (
 
     <Section
       foreground="white"
-      background={Colour({ h: "orange", s: "muted", v: "light" })}
+      background={Colour({ h: "green", s: "muted", v: "light" })}
       id="doing"
     >
-      <SectionHeading>Currently Doing</SectionHeading>
-      <Card size={200} item={Items.StairwayConstants}></Card>
-      <Card size={200} item={Items.ProjectCellar}></Card>
+      <SectionHeading>Current Stuff</SectionHeading>
+      <CardGrid>
+        <Card size={200} item={Items.StairwayConstants}></Card>
+        <Card size={200} item={Items.ProjectCellar}></Card>
+      </CardGrid>
+    </Section>
+
+    <Section
+      foreground="white"
+      background={Colour({ h: "yellow", s: "muted", v: "light" })}
+      id="did"
+    >
+      <SectionHeading>Past Stuff</SectionHeading>
+      <CardGrid>
+        <Card size={200} item={Items.Waterpark}></Card>
+      </CardGrid>
     </Section>
   </>
 );

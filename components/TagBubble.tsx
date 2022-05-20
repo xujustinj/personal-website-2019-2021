@@ -13,10 +13,10 @@ const Bubble = styled.span<{
   /* Font */
   font-style: normal;
   font-weight: 700;
-  font-size: 8pt;
+  font-size: 7pt;
 
   /* Spacing */
-  padding: 4px 8px;
+  padding: 4px 6px;
   text-align: center;
 `;
 

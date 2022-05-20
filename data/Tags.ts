@@ -22,6 +22,7 @@ enum Languages {
   JS = "JavaScript",
   KOTLIN = "Kotlin",
   PYTHON = "Python",
+  SQL = "SQL",
   SWIFT = "Swift",
   TEX = "TeX",
   TS = "TypeScript",
