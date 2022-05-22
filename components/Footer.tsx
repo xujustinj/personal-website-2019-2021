@@ -1,15 +1,9 @@
-import {
-  faGithub,
-  faLinkedin,
-  faTwitter,
-  IconDefinition,
-} from "@fortawesome/free-brands-svg-icons";
+import { IconDefinition } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import { ReactNode } from "react";
 import styled from "styled-components";
 import { FontAwesome } from "../data/FontAwesome";
-import { Icons } from "../data/Icons";
 import { adapt } from "../styles/Adaptive";
 import { Section, SectionProps } from "./Section";
 

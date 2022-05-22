@@ -308,12 +308,8 @@ export const Items: ReadonlyArray<Item> = [
     icon: Icons.ULAM_SPIRAL,
     links: [
       {
-        url: "https://www.justinxu.me/Extended-Essay/03-01-19%20Version%20(Revision).pdf",
+        url: "https://xujustinj.github.io/Extended-Essay/03-01-19%20Version%20(Revision).pdf",
         icon: FontAwesome.PAPER,
-      },
-      {
-        url: "https://www.justinxu.me/Extended-Essay/",
-        icon: FontAwesome.WEBSITE,
       },
       {
         url: "https://github.com/xujustinj/Extended-Essay",
@@ -330,7 +326,7 @@ export const Items: ReadonlyArray<Item> = [
     icon: Icons.HEXAGONAL_2048,
     links: [
       {
-        url: "https://www.justinxu.me/hexagonal-2048/",
+        url: "https://xujustinj.github.io/hexagonal-2048/",
         icon: FontAwesome.GAME,
       },
       {

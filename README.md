@@ -26,3 +26,4 @@ npm install
 - [FontAwesome icons in Next.js](https://fontawesome.com/docs/web/use-with/react/use-with#next-js)
 - [Open a Next.js Link in a new tab](https://stackoverflow.com/a/71029662)
 - [List bullets with emoji](https://www.clairecodes.com/blog/2019-04-26-styling-list-bullets-with-emoji/)
+- [Deploying AWS Amplify to a custom 3rd party domain](https://docs.aws.amazon.com/amplify/latest/userguide/to-add-a-custom-domain-managed-by-a-third-party-dns-provider.html)

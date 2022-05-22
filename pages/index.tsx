@@ -67,7 +67,7 @@ const IntroText = styled.p`
   margin: 0;
 `;
 
-export default () => (
+const Home = () => (
   <>
     <Section
       foreground="white"
@@ -159,3 +159,5 @@ export default () => (
     </Section>
   </>
 );
+
+export default Home;
