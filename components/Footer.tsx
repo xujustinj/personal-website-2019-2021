@@ -8,6 +8,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import { ReactNode } from "react";
 import styled from "styled-components";
+import { FontAwesome } from "../data/FontAwesome";
+import { Icons } from "../data/Icons";
 import { adapt } from "../styles/Adaptive";
 import { Section, SectionProps } from "./Section";
 
@@ -91,17 +93,26 @@ export const Footer = (props: SectionProps) => (
         <FooterMessage>Last updated May 18, 2022.</FooterMessage>
       </FooterColumn>
       <FooterColumn>
-        <FooterLink href={"https://github.com/xujustinj"} icon={faGithub}>
+        <FooterLink
+          href={"https://github.com/xujustinj"}
+          icon={FontAwesome.GITHUB}
+        >
           GitHub
         </FooterLink>
         <FooterLink
           href={"https://www.linkedin.com/in/xujustinj/"}
-          icon={faLinkedin}
+          icon={FontAwesome.LINKEDIN}
         >
           LinkedIn
         </FooterLink>
-        <FooterLink href={"https://twitter.com/xujustinj"} icon={faTwitter}>
+        <FooterLink
+          href={"https://twitter.com/xujustinj"}
+          icon={FontAwesome.TWITTER}
+        >
           Twitter
+        </FooterLink>
+        <FooterLink href={"/resume.pdf"} icon={FontAwesome.RESUME}>
+          Résumé
         </FooterLink>
       </FooterColumn>
     </FooterContainer>

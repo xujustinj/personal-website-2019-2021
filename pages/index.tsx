@@ -141,8 +141,8 @@ export default () => (
     </Section>
 
     <Section
-      foreground="white"
-      background={Colour({ h: "green", s: "muted", v: "light" })}
+      foreground="black"
+      background={Colour({ h: "green", s: "faded", v: "light" })}
       id="doing"
     >
       <SectionHeading>Current Stuff</SectionHeading>
@@ -150,8 +150,8 @@ export default () => (
     </Section>
 
     <Section
-      foreground="white"
-      background={Colour({ h: "yellow", s: "muted", v: "light" })}
+      foreground="black"
+      background={Colour({ h: "green", s: "faded", v: "lighter" })}
       id="did"
     >
       <SectionHeading>Past Stuff</SectionHeading>
