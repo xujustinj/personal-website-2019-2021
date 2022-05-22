@@ -16,7 +16,7 @@ export interface CardGridProps {
 export const CardGrid = ({ items }: CardGridProps) => (
   <Grid>
     {items.map((item) => (
-      <Card key={item.name} size={200} item={item}></Card>
+      <Card key={item.title} size={200} item={item}></Card>
     ))}
   </Grid>
 );

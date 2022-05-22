@@ -1,61 +1,341 @@
 import { Item } from "../model/Item";
 import { Tags } from "./Tags";
-import LooLabsIcon from "../public/assets/loo-labs-400x400.jpg";
-import ProjectCellarIcon from "../public/assets/project-cellar-200x200.png";
-import StairwayConstantsIcon from "../public/assets/stairway-constants-400x400.png";
-import WaterparkIcon from "../public/assets/waterpark-288x288.png";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faGlobe } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesome } from "./FontAwesome";
+import { Icons } from "./Icons";
 
 export const Items: ReadonlyArray<Item> = [
   {
-    name: "Stairway Constants",
+    title: "Personal Website",
     description:
-      "A massive guide to every constant featured on a decorative number line in a campus stairwell.",
-    tags: [Tags.WRITING, Tags.MATH],
-    icon: StairwayConstantsIcon,
+      "You're on it right now! I'm allergic to templates, so this took quite a while. Working on adding a blog and other extras.",
+    tags: [Tags.NEXT, Tags.CSS],
+    icon: Icons.WEBSITE,
     links: [
       {
-        url: "https://github.com/xujustinj/stairway-constants/",
-        icon: faGithub,
+        url: "https://github.com/xujustinj/xujustinj.github.io",
+        icon: FontAwesome.GITHUB,
       },
     ],
     status: "ongoing",
   },
   {
-    name: "Project Cellar",
-    description: "A well-kept secret.",
-    icon: ProjectCellarIcon,
+    title: "Amazon",
+    subtitle: "SDE Intern",
+    description:
+      "5th co-op internship: building a request-tracing tool to make it easier to debug services within Amazon Prime.",
+    tags: [Tags.AWS, Tags.JAVA, Tags.TS, Tags.REACT],
+    icon: Icons.AMAZON,
+    links: [
+      {
+        url: "https://www.linkedin.com/company/amazon/mycompany/",
+        icon: FontAwesome.LINKEDIN,
+      },
+    ],
     status: "ongoing",
   },
   {
-    name: "Loo Labs",
+    title: "Project Cellar",
+    description: "A well-kept secret.",
+    icon: Icons.PROJECT_CELLAR,
+    status: "ongoing",
+  },
+  {
+    title: "Raytracer",
+    subtitle: "UWaterloo CS488 (Graphics)",
     description:
-      "Backend team lead in a short-lived student developer organization. Kicked bugs, took ownership. Learned how to (and not to) design and lead.",
-    tags: [Tags.LEADERSHIP, Tags.HCI, Tags.ENGINEERING],
-    icon: LooLabsIcon,
+      "Renders arbitrary scenes complete with bump mapping, depth-of-field, and anti-aliasing. Used to make a cool animation.",
+    tags: [Tags.GRAPHICS, Tags.CPP, Tags.LUA],
+    icon: Icons.RAYTRACER,
     links: [
       {
-        url: "https://website-loo-labs.vercel.app/",
-        icon: faGlobe,
+        url: "https://youtu.be/7qCtGmXyJa8",
+        icon: FontAwesome.YOUTUBE,
       },
     ],
     status: "ended",
   },
   {
-    name: "Waterpark",
+    title: "E2E TS Template",
     description:
-      "Loo Labs' flagship product: a campus wiki. Some of my finest full-stack engineering work, cut short by the collapse of Loo Labs itself.",
-    tags: [Tags.TS, Tags.NEXT, Tags.EXPRESS],
-    icon: WaterparkIcon,
+      "A template full-stack web app following a variation of the Clean Architecture. Fully strongly typed with TypeScript.",
+    tags: [
+      Tags.TS,
+      Tags.ARCHITECTURE,
+      Tags.RPC,
+      Tags.NEXT,
+      Tags.EXPRESS,
+      Tags.DOCKER,
+    ],
+    icon: Icons.E2E_TS_TEMPLATE,
+    links: [
+      {
+        url: "https://github.com/xujustinj/e2e-ts-template",
+        icon: FontAwesome.GITHUB,
+      },
+    ],
+    status: "ongoing",
+  },
+  {
+    title: "Imagine Scrum",
+    subtitle: "UWaterloo CS449 (HCI)",
+    description:
+      "Design project in an HCI course I took with the UGO II team. Can we improve team cohesion by rethinking scrum?",
+    tags: [Tags.HCI, Tags.AGILE, Tags.FIGMA],
+    icon: Icons.IMAGINE_SCRUM,
+    links: [
+      {
+        url: "https://medium.com/cs449-649-f21-uwaterloo/ugo-ii-our-product-is-imagine-scrum-2c512a989393",
+        icon: FontAwesome.MEDIUM,
+      },
+    ],
+    status: "ended",
+  },
+  {
+    title: "Alloy",
+    subtitle: "Software Developer Intern",
+    description:
+      "4th co-op internship: helped roll out a huge improvement in the way we handle customers' product data.",
+    tags: [Tags.JAVA, Tags.PSQL, Tags.REACT, Tags.TS, Tags.GOOGLE_SHEETS],
+    icon: Icons.ALLOY,
+    links: [
+      {
+        url: "https://www.linkedin.com/company/alloy-inc/",
+        icon: FontAwesome.LINKEDIN,
+      },
+      {
+        url: "https://alloy.ai/",
+        icon: FontAwesome.WEBSITE,
+      },
+    ],
+    status: "ended",
+  },
+  {
+    title: "Co-op MMR",
+    subtitle: "UWaterloo CS348 (Databases)",
+    description:
+      "A database-driven full-stack web app built around an MMR system for co-op employers at UWaterloo.",
+    tags: [Tags.PYTHON, Tags.FLASK, Tags.DOCKER, Tags.REACT, Tags.MYSQL],
+    icon: Icons.COOP_MMR,
+    links: [
+      {
+        url: "https://github.com/SimonZhang0606/Coop_MMR",
+        icon: FontAwesome.GITHUB,
+      },
+    ],
+    status: "ended",
+  },
+  {
+    title: "Businext",
+    subtitle: "FairVentures Lab",
+    description:
+      "An open-source FVLab project that uses pictures and AI to learn about businesses.",
+    tags: [
+      Tags.AI,
+      Tags.GOOGLE_CLOUD_VISION,
+      Tags.WORD2VEC,
+      Tags.REACT,
+      Tags.GQL,
+    ],
+    icon: Icons.BUSINEXT,
+    links: [
+      {
+        url: "https://github.com/businext",
+        icon: FontAwesome.GITHUB,
+      },
+      {
+        url: "https://youtu.be/lj-PPQe61I8",
+        icon: FontAwesome.YOUTUBE,
+      },
+    ],
+    status: "ended",
+  },
+  {
+    title: "FairVentures Lab",
+    subtitle: "Solutions Developer",
+    description:
+      "3rd co-op internship: built and demoed configurable AI assistants for underwriters at Fairfax.",
+    tags: [Tags.AI, Tags.PYTHON, Tags.AIRFLOW, Tags.DOCKER, Tags.REACT],
+    icon: Icons.FAIRVENTURES,
+    links: [
+      {
+        url: "https://www.linkedin.com/company/fairventures/",
+        icon: FontAwesome.LINKEDIN,
+      },
+      {
+        url: "https://www.fairventures.ca/",
+        icon: FontAwesome.WEBSITE,
+      },
+    ],
+    status: "ended",
+  },
+  {
+    title: "Waterpark",
+    subtitle: "Loo Labs",
+    description:
+      "A UWaterloo student wiki. Some of my finest full-stack engineering work, cut short by the collapse of Loo Labs itself.",
+    tags: [Tags.TS, Tags.EXPRESS, Tags.NEXT, Tags.CSS, Tags.DOCKER],
+    icon: Icons.WATERPARK,
     links: [
       {
         url: "https://github.com/loolabs/waterpark",
-        icon: faGithub,
+        icon: FontAwesome.GITHUB,
       },
       {
         url: "https://waterpark-loo-labs.vercel.app/",
-        icon: faGlobe,
+        icon: FontAwesome.WEBSITE,
+      },
+    ],
+    status: "ended",
+  },
+  {
+    title: "Loo Labs",
+    subtitle: "Backend Team Lead",
+    description:
+      "Led the backend team within a short-lived student developer organization. Kicked bugs, took ownership. Learned how to (and not to) design and lead.",
+    tags: [Tags.LEADERSHIP, Tags.HCI, Tags.ENGINEERING],
+    icon: Icons.LOO_LABS,
+    links: [
+      {
+        url: "https://website-loo-labs.vercel.app/",
+        icon: FontAwesome.WEBSITE,
+      },
+    ],
+    status: "ended",
+  },
+  {
+    title: "Wish",
+    subtitle: "Full Stack SWE Intern",
+    description:
+      "2nd co-op internship: helped the ProductBoost team encourage merchants to advertise on our platform.",
+    tags: [Tags.PYTHON, Tags.REACT, Tags.MONGO, Tags.GQL, Tags.AB],
+    icon: Icons.WISH,
+    links: [
+      {
+        url: "https://merchantfaq.wish.com/hc/en-us/sections/360001746773-ProductBoost",
+        icon: FontAwesome.WEBSITE,
+      },
+      {
+        url: "https://www.linkedin.com/company/wishshopping/",
+        icon: FontAwesome.LINKEDIN,
+      },
+    ],
+    status: "ended",
+  },
+  {
+    title: "Stairway Constants",
+    subtitle: "UWaterloo mathNEWS",
+    description:
+      "A massive guide to every constant featured on a decorative number line in a UWaterloo campus stairwell.",
+    tags: [Tags.WRITING, Tags.MATH],
+    icon: Icons.STAIRWAY_CONSTANTS,
+    links: [
+      {
+        url: "https://github.com/xujustinj/stairway-constants/",
+        icon: FontAwesome.GITHUB,
+      },
+    ],
+    status: "ongoing",
+  },
+  {
+    title: "Asteria",
+    description:
+      "A neural network built from scratch that will learn to read Madeon's Adventure alphabet if I ever find training data.",
+    tags: [Tags.CPP, Tags.PYTHON, Tags.AI],
+    icon: Icons.ASTERIA,
+    links: [
+      {
+        url: "https://github.com/xujustinj/Asteria",
+        icon: FontAwesome.GITHUB,
+      },
+    ],
+    status: "ongoing",
+  },
+  {
+    title: "SRG",
+    subtitle: "Swift Record Generator",
+    description:
+      "Outputs random code to measure the performance of structs, classes, and dictionaries for representing data records in Swift.",
+    tags: [Tags.SWIFT, Tags.PERFORMANCE],
+    icon: Icons.SWIFT,
+    links: [
+      {
+        url: "https://github.com/xujustinj/swift-record-generator",
+        icon: FontAwesome.GITHUB,
+      },
+    ],
+    status: "ended",
+  },
+  {
+    title: "Osellus Mobile",
+    subtitle: "Mobile Software Developer",
+    description:
+      "1st co-op internship: added features to the Surge9 microlearning platform, which the company is now named after.",
+    tags: [Tags.SWIFT, Tags.IOS, Tags.KOTLIN, Tags.ANDROID],
+    icon: Icons.OSELLUS,
+    links: [
+      {
+        url: "https://surge9.com/",
+        icon: FontAwesome.WEBSITE,
+      },
+      {
+        url: "https://www.linkedin.com/company/leap9-inc/",
+        icon: FontAwesome.LINKEDIN,
+      },
+    ],
+    status: "ended",
+  },
+  {
+    title: "ADETOS",
+    subtitle: "Automated Double-Elimination Tournament Organising Spreadsheet",
+    description:
+      "A macro-powered spreadsheet that plans and runs table tennis tournaments.",
+    tags: [Tags.GOOGLE_SHEETS, Tags.JS],
+    icon: Icons.ADETOS,
+    links: [
+      {
+        url: "https://docs.google.com/spreadsheets/d/1JsttjsZt6USt7h1Z66PhwibUmafxuH1Mwkzk2tNlDag/edit",
+        icon: FontAwesome.SPREADSHEET,
+      },
+    ],
+    status: "ended",
+  },
+  {
+    title: "Ulam Spiral",
+    subtitle: "IB Extended Essay",
+    description:
+      "Strange patterns appear when you highlight all the primes on a spiral number line. This was the topic of a paper I wrote in high school.",
+    tags: [Tags.MATH, Tags.WRITING, Tags.JAVA],
+    icon: Icons.ULAM_SPIRAL,
+    links: [
+      {
+        url: "https://www.justinxu.me/Extended-Essay/03-01-19%20Version%20(Revision).pdf",
+        icon: FontAwesome.PAPER,
+      },
+      {
+        url: "https://www.justinxu.me/Extended-Essay/",
+        icon: FontAwesome.WEBSITE,
+      },
+      {
+        url: "https://github.com/xujustinj/Extended-Essay",
+        icon: FontAwesome.GITHUB,
+      },
+    ],
+    status: "ended",
+  },
+  {
+    title: "Hexagonal 2048",
+    description:
+      "My introductory project to JavaScript, inspired by my love for the original (square) 2048. Swipe or use QWEASD to control the board.",
+    tags: [Tags.JS, Tags.P5],
+    icon: Icons.HEXAGONAL_2048,
+    links: [
+      {
+        url: "https://www.justinxu.me/hexagonal-2048/",
+        icon: FontAwesome.GAME,
+      },
+      {
+        url: "https://github.com/xujustinj/hexagonal-2048",
+        icon: FontAwesome.GITHUB,
       },
     ],
     status: "ended",

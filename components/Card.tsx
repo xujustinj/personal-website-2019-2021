@@ -4,7 +4,7 @@ import Link from "next/link";
 import styled from "styled-components";
 import { Item } from "../model/Item";
 import { adapt } from "../styles/Adaptive";
-import { primary } from "../styles/Colours";
+import { Colour, primary } from "../styles/Colours";
 import { TagBubble } from "./TagBubble";
 
 interface CardContainerProps {
@@ -81,30 +81,45 @@ const CardContent = styled.div`
   color: black;
 `;
 
-const CardNameRow = styled.div`
-  /* Child Layout */
+const CardHeader = styled.div`
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  > * {
-    margin: 0;
-  }
+  flex-direction: column;
+  gap: 2px;
 `;
 
-const CardName = styled.h3`
+const CardTitleRow = styled.div`
+  /* Child Layout */
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+`;
+
+const CardTitle = styled.h3`
+  margin: 0;
+
   /* Font */
   font-weight: 700;
   font-size: 12pt;
+  line-height: 13pt;
 `;
 
 const CardLinks = styled.div`
   /* Flex */
   display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
+  flex-direction: row;
+  gap: 2px;
 
   /* Appearance */
   color: ${primary};
+  font-size: 13pt;
+`;
+
+const CardSubtitle = styled.p`
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 9pt;
+  color: ${Colour({ v: "medium" })};
 `;
 
 const CardDescription = styled.p`
@@ -136,21 +151,24 @@ export interface CardProps {
 }
 export const Card = ({ size, item }: CardProps) => (
   <CardContainer size={size}>
-    <CardIcon src={item.icon} alt={item.name} width={size} height={size} />
+    <CardIcon src={item.icon} alt={item.title} width={size} height={size} />
     <CardContent className="overlay">
-      <CardNameRow>
-        <CardName>{item.name}</CardName>
-        {item.links === undefined || (
-          <CardLinks>
-            {item.links.map(({ url, icon }) => (
-              <Link key={icon.iconName} href={url}>
-                {/* fa-fw: fixed width */}
-                <Icon icon={icon} className="fa-fw" />
-              </Link>
-            ))}
-          </CardLinks>
-        )}
-      </CardNameRow>
+      <CardHeader>
+        <CardTitleRow>
+          <CardTitle>{item.title}</CardTitle>
+          {item.links === undefined || (
+            <CardLinks>
+              {item.links.map(({ url, icon }) => (
+                <Link key={icon.iconName} href={url}>
+                  {/* fa-fw: fixed width */}
+                  <Icon icon={icon} className="fa-fw" />
+                </Link>
+              ))}
+            </CardLinks>
+          )}
+        </CardTitleRow>
+        {item.subtitle && <CardSubtitle>{item.subtitle}</CardSubtitle>}
+      </CardHeader>
       <CardDescription>{item.description}</CardDescription>
       {item.tags === undefined || (
         <CardTags>

@@ -24,3 +24,5 @@ npm install
 - [Linking to an element](https://stackoverflow.com/a/2835151)
 - [Custom image for using AWS Amplify with Git LFS](https://hub.docker.com/r/slawekkolodziej/aws-amplify-lfs)
 - [FontAwesome icons in Next.js](https://fontawesome.com/docs/web/use-with/react/use-with#next-js)
+- [Open a Next.js Link in a new tab](https://stackoverflow.com/a/71029662)
+- [List bullets with emoji](https://www.clairecodes.com/blog/2019-04-26-styling-list-bullets-with-emoji/)

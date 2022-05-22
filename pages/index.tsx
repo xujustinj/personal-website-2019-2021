@@ -102,8 +102,11 @@ export default () => (
       <EmojiBulletItem bullet={"🎓"}>
         <IntroText>
           a 4th year Honours Computer Science student in the co-op program at
-          the University of Waterloo (graduating April 2023)
+          UWaterloo (graduating April 2023)
         </IntroText>
+      </EmojiBulletItem>
+      <EmojiBulletItem bullet={"🍁"}>
+        <IntroText>in Vancouver, BC</IntroText>
       </EmojiBulletItem>
       <EmojiBulletItem bullet={"💻"}>
         <IntroText>
@@ -126,6 +129,11 @@ export default () => (
       </EmojiBulletItem>
       <EmojiBulletItem bullet={"🕹️"}>
         <IntroText>bad at video games and bouldering</IntroText>
+      </EmojiBulletItem>
+      <EmojiBulletItem bullet={"🎧"}>
+        <IntroText>
+          a fan of Madeon and eletronic music (especially old Monstercat stuff)
+        </IntroText>
       </EmojiBulletItem>
       <EmojiBulletItem bullet={"🎹"}>
         <IntroText>something of a musician myself</IntroText>
