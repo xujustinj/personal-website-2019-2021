@@ -27,3 +27,4 @@ npm install
 - [Open a Next.js Link in a new tab](https://stackoverflow.com/a/71029662)
 - [List bullets with emoji](https://www.clairecodes.com/blog/2019-04-26-styling-list-bullets-with-emoji/)
 - [Deploying AWS Amplify to a custom 3rd party domain](https://docs.aws.amazon.com/amplify/latest/userguide/to-add-a-custom-domain-managed-by-a-third-party-dns-provider.html)
+- [Why CNAME can't be applied on justinxu.me (at least, on Hover)](https://www.freecodecamp.org/news/why-cant-a-domain-s-root-be-a-cname-8cbab38e5f5c/)
