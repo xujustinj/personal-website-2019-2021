@@ -132,7 +132,7 @@ const Home = () => (
       </EmojiBulletItem>
       <EmojiBulletItem bullet={"🎧"}>
         <IntroText>
-          a fan of Madeon and eletronic music (especially old Monstercat stuff)
+          a fan of Madeon and electronic music (especially old Monstercat stuff)
         </IntroText>
       </EmojiBulletItem>
       <EmojiBulletItem bullet={"🎹"}>
