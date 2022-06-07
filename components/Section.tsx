@@ -9,18 +9,8 @@ export const Section = styled.div<SectionProps>`
   color: ${(props) => props.foreground};
   background: ${(props) => props.background};
   ${adapt({
-    mobile: `
-      padding-left: max(calc(100% / 18), 16px);
-      padding-right: max(calc(100% / 18), 16px);
-      padding-top: 32px;
-      padding-bottom: 32px;
-    `,
-    desktop: `
-      padding-left: calc(100% / 6);
-      padding-right: calc(100% / 6);
-      padding-top: 48px;
-      padding-bottom: 48px;
-    `,
+    mobile: `padding: 32px max(calc(100vw / 18), 16px);`,
+    desktop: `padding: 48px calc(100vw / 6);`,
   })}
 `;
 

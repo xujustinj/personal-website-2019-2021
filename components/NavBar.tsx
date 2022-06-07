@@ -3,12 +3,15 @@ import Link from "next/link";
 import styled from "styled-components";
 import { primary } from "../styles/Colours";
 import Shield from "../public/assets/shield.svg";
+import { adapt } from "../styles/Adaptive";
+
+export const navBarHeight = "40px";
 
 // The NavBar is split into three segments: left, centre, and right.
 const NavBarContainer = styled.div`
   /* Sizing */
   width: 100%;
-  height: 32px;
+  height: ${navBarHeight};
 
   /* Child Layout */
   display: grid;
@@ -42,8 +45,14 @@ const LogoContainer = styled.span`
   padding: 4px;
 
   p {
-    font-size: 14pt;
-    margin: 0;
+    ${adapt({
+      mobile: `display: none;`,
+      desktop: `
+        display: inline;
+        font-size: 14pt;
+        margin: 0;
+      `,
+    })}
   }
 
   :hover {
@@ -68,7 +77,8 @@ const Logo = () => (
 
 const PageTitle = styled.h1`
   margin: 0;
-  font-size: 16pt;
+  font-size: 14pt;
+  white-space: nowrap;
 `;
 
 export interface NavBarProps {

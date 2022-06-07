@@ -28,3 +28,7 @@ npm install
 - [List bullets with emoji](https://www.clairecodes.com/blog/2019-04-26-styling-list-bullets-with-emoji/)
 - [Deploying AWS Amplify to a custom 3rd party domain](https://docs.aws.amazon.com/amplify/latest/userguide/to-add-a-custom-domain-managed-by-a-third-party-dns-provider.html)
 - [Why CNAME can't be applied on justinxu.me (at least, on Hover)](https://www.freecodecamp.org/news/why-cant-a-domain-s-root-be-a-cname-8cbab38e5f5c/)
+- [Dynamic imports](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-4.html#dynamic-import-expressions)
+- [ComponentDidMount is equivalent to useEffect](https://stackoverflow.com/questions/60304981/where-to-put-component-did-mount-in-my-next-js-file)
+- [Using p5.js in Next.js needs a require() call](https://stackoverflow.com/a/57897131)
+- [Callback refs](https://reactjs.org/docs/refs-and-the-dom.html#callback-refs)
