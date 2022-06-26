@@ -15,6 +15,11 @@ const GlobalStyle = createGlobalStyle`
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Clear Sans";
+  src: url("/fonts/clear-sans.bold.ttf");
+}
+
 body {
   margin: 0;
   padding: 0;
