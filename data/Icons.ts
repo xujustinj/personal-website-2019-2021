@@ -15,6 +15,7 @@ import RAYTRACER from "../public/assets/raytraced-500x500.png";
 import STAIRWAY_CONSTANTS from "../public/assets/stairway-constants-400x400.png";
 import SWIFT from "../public/assets/swift-396x396.png";
 import ULAM_SPIRAL from "../public/assets/ulam-spiral-290x290.png";
+import WAABI from "../public/assets/waabi-200x200.jpg";
 import WATERPARK from "../public/assets/waterpark-288x288.png";
 import WEBSITE from "../public/assets/website-logo-400x400.png";
 import WISH from "../public/assets/wish-512x512.png";
@@ -37,6 +38,7 @@ export const Icons = {
   STAIRWAY_CONSTANTS,
   SWIFT,
   ULAM_SPIRAL,
+  WAABI,
   WATERPARK,
   WEBSITE,
   WISH,

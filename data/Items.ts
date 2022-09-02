@@ -5,6 +5,20 @@ import { Icons } from "./Icons";
 
 export const Items: ReadonlyArray<Item> = [
   {
+    title: "Waabi",
+    subtitle: "Research & Engineering Intern",
+    description: "6th co-op internship.",
+    tags: [Tags.AI],
+    icon: Icons.WAABI,
+    links: [
+      {
+        url: "https://www.linkedin.com/company/waabi/",
+        icon: FontAwesome.LINKEDIN,
+      },
+    ],
+    status: "ongoing",
+  },
+  {
     title: "Personal Website",
     description:
       "You're on it right now! I'm allergic to templates, so this took quite a while. Working on adding a blog and other extras.",
@@ -22,16 +36,16 @@ export const Items: ReadonlyArray<Item> = [
     title: "Amazon",
     subtitle: "SDE Intern",
     description:
-      "5th co-op internship: building a request-tracing tool to make it easier to debug services within Amazon Prime.",
+      "5th co-op internship: over-engineered a debugging tool and ended up with a new programming language plus a distributed tracing framework.",
     tags: [Tags.AWS, Tags.JAVA, Tags.TS, Tags.REACT],
     icon: Icons.AMAZON,
     links: [
       {
-        url: "https://www.linkedin.com/company/amazon/mycompany/",
+        url: "https://www.linkedin.com/company/amazon/",
         icon: FontAwesome.LINKEDIN,
       },
     ],
-    status: "ongoing",
+    status: "ended",
   },
   {
     title: "Project Cellar",
