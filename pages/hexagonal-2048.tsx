@@ -85,10 +85,13 @@ const Hexagonal2048 = () => {
         1048576: { background: p5.color(30, 184, 130), text: lightText },
       },
     };
+
+    p5.frameRate(60);
+
+    autoSize(p5);
   };
 
   const draw = (p5: P5) => {
-    autoSize(p5);
     p5.background(colours.background);
 
     drawScore(p5);
@@ -96,7 +99,13 @@ const Hexagonal2048 = () => {
 
   return (
     <Screen foreground="black" background="white">
-      <P5Sketch width={600} height={600} postSetup={postSetup} draw={draw} />
+      <P5Sketch
+        width={600}
+        height={600}
+        postSetup={postSetup}
+        draw={draw}
+        windowResized={autoSize}
+      />
     </Screen>
   );
 };
