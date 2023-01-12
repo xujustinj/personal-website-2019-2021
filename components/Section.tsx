@@ -15,9 +15,10 @@ export const Section = styled.div<SectionProps>`
       padding-top: 32px;
       padding-bottom: 32px;
     `,
+    // never wider than the height of the screen
     desktop: `
-      padding-left: calc(100% / 6);
-      padding-right: calc(100% / 6);
+      padding-left: max(calc(100% / 6), 50vw - 50vh);
+      padding-right: max(calc(100% / 6), 50vw - 50vh);
       padding-top: 48px;
       padding-bottom: 48px;
     `,

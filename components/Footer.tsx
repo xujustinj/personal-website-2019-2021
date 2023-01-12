@@ -63,13 +63,7 @@ const FooterColumn = styled.div`
   }
 `;
 
-const FooterMessage = styled.p`
-  // margin: 0;
-
-  // > a {
-  //   color: inherit;
-  // }
-`;
+const FooterMessage = styled.p``;
 
 export const Footer = (props: SectionProps) => (
   <Section {...props}>

@@ -69,6 +69,7 @@ const Logo = () => (
 const PageTitle = styled.h1`
   margin: 0;
   font-size: 16pt;
+  white-space: nowrap;
 `;
 
 export interface NavBarProps {
