@@ -6,8 +6,9 @@ import { Icons } from "./Icons";
 export const Items: ReadonlyArray<Item> = [
   {
     title: "Waabi",
-    subtitle: "Research & Engineering Intern",
-    description: "6th co-op internship.",
+    subtitle: "Research Intern",
+    description:
+      "6th co-op internship: self-driving research (details coming soon).",
     tags: [Tags.AI],
     icon: Icons.WAABI,
     links: [
@@ -16,7 +17,7 @@ export const Items: ReadonlyArray<Item> = [
         icon: FontAwesome.LINKEDIN,
       },
     ],
-    status: "ongoing",
+    status: "ended",
   },
   {
     title: "Personal Website",
