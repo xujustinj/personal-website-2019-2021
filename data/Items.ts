@@ -341,7 +341,7 @@ export const Items: ReadonlyArray<Item> = [
     icon: Icons.HEXAGONAL_2048,
     links: [
       {
-        url: "https://xujustinj.github.io/hexagonal-2048/",
+        url: "/hexagonal-2048",
         icon: FontAwesome.GAME,
       },
       {
