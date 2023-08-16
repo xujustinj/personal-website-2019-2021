@@ -8,13 +8,17 @@ export const Items: ReadonlyArray<Item> = [
     title: "Waabi",
     subtitle: "Research Intern",
     description:
-      "6th co-op internship: self-driving research (details coming soon).",
-    tags: [Tags.AI],
+      "6th co-op internship: self-driving research on simulating safety-critical (adversarial) driving scenarios. We published something!",
+    tags: [Tags.AI, Tags.PYTHON],
     icon: Icons.WAABI,
     links: [
       {
         url: "https://www.linkedin.com/company/waabi/",
         icon: FontAwesome.LINKEDIN,
+      },
+      {
+        url: "https://waabi.ai/mixsim/",
+        icon: FontAwesome.PAPER,
       },
     ],
     status: "ended",
@@ -246,20 +250,6 @@ export const Items: ReadonlyArray<Item> = [
     links: [
       {
         url: "https://github.com/xujustinj/stairway-constants/",
-        icon: FontAwesome.GITHUB,
-      },
-    ],
-    status: "ongoing",
-  },
-  {
-    title: "Asteria",
-    description:
-      "A neural network built from scratch that will learn to read Madeon's Adventure alphabet if I ever find training data.",
-    tags: [Tags.CPP, Tags.PYTHON, Tags.AI],
-    icon: Icons.ASTERIA,
-    links: [
-      {
-        url: "https://github.com/xujustinj/Asteria",
         icon: FontAwesome.GITHUB,
       },
     ],

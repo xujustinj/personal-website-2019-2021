@@ -78,7 +78,7 @@ export const Footer = (props: SectionProps) => (
           Hosted using{" "}
           <Link href="https://aws.amazon.com/amplify/">AWS Amplify</Link>.
         </FooterMessage>
-        <FooterMessage>Last updated January 12, 2022.</FooterMessage>
+        <FooterMessage>Last updated August 16, 2023.</FooterMessage>
       </FooterColumn>
       <FooterColumn>
         <FooterLink
@@ -99,8 +99,13 @@ export const Footer = (props: SectionProps) => (
         >
           Twitter
         </FooterLink>
-        <FooterLink href={"/resume.pdf"} icon={FontAwesome.RESUME}>
-          Résumé
+        <span>
+          <FooterLink href={"/resume.pdf"} icon={FontAwesome.RESUME}>
+            Résumé
+          </FooterLink>
+        </span>
+        <FooterLink href={"/cv.pdf"} icon={FontAwesome.RESUME}>
+          CV (résumé for nerds)
         </FooterLink>
       </FooterColumn>
     </FooterContainer>

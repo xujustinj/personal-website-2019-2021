@@ -101,12 +101,8 @@ const Home = () => (
       <SectionHeading>{"I'm..."}</SectionHeading>
       <EmojiBulletItem bullet={"🎓"}>
         <IntroText>
-          a final-term Honours Computer Science student in the co-op program at
-          UWaterloo (graduating April 2023)
+          an incoming Computer Science masters student at UWaterloo
         </IntroText>
-      </EmojiBulletItem>
-      <EmojiBulletItem bullet={"🍁"}>
-        <IntroText>in Waterloo, ON</IntroText>
       </EmojiBulletItem>
       <EmojiBulletItem bullet={"💻"}>
         <IntroText>
@@ -132,6 +128,11 @@ const Home = () => (
       </EmojiBulletItem>
       <EmojiBulletItem bullet={"🎹"}>
         <IntroText>something of a musician myself</IntroText>
+      </EmojiBulletItem>
+      <EmojiBulletItem bullet={"🎂"}>
+        <IntroText>
+          <Link href={"https://youtu.be/42Gtm4-Ax2U"}>twenty-three</Link>
+        </IntroText>
       </EmojiBulletItem>
     </Section>
 
