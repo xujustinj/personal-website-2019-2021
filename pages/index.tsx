@@ -76,7 +76,7 @@ const Home = () => (
   <>
     <Section
       $foreground="white"
-      $background={Colour({ h: "blue", s: "muted", v: "dark" })}
+      $background={Colour({ h: "blue", s: "muted", v: "darker" })}
       id="intro"
     >
       <IntroContainer>
