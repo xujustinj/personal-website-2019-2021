@@ -12,5 +12,5 @@ export interface Item {
     url: string;
     icon: IconDefinition;
   }>;
-  readonly status: "ongoing" | "ended";
+  readonly status: "ongoing" | "ended" | "hidden" | "featured";
 }

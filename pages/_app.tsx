@@ -34,7 +34,7 @@ function App({ Component, pageProps }: AppProps) {
       <NavBar {...pageProps} />
       <Component {...pageProps} />
       <Footer
-        $background={Colour({ h: "blue", s: "faded", v: "dark" })}
+        $background={Colour({ h: "blue", s: "faded", v: "darker" })}
         $foreground="white"
       />
     </>

@@ -15,7 +15,7 @@ const CardContainer = styled.div<CardContainerProps>`
   height: ${(props) => props.$size}px;
   position: relative;
 
-  border-radius: 8px;
+  border-radius: 16px;
   overflow: hidden;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
   transition: box-shadow 0.5s;

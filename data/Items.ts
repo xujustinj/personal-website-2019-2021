@@ -35,7 +35,7 @@ export const Items: ReadonlyArray<Item> = [
         icon: FontAwesome.GITHUB,
       },
     ],
-    status: "ongoing",
+    status: "hidden",
   },
   {
     title: "Amazon",
@@ -56,7 +56,7 @@ export const Items: ReadonlyArray<Item> = [
     title: "Project Cellar",
     description: "A well-kept secret.",
     icon: Icons.PROJECT_CELLAR,
-    status: "ongoing",
+    status: "hidden",
   },
   {
     title: "Raytracer",
@@ -71,7 +71,7 @@ export const Items: ReadonlyArray<Item> = [
         icon: FontAwesome.YOUTUBE,
       },
     ],
-    status: "ended",
+    status: "featured",
   },
   {
     title: "E2E TS Template",
@@ -92,7 +92,7 @@ export const Items: ReadonlyArray<Item> = [
         icon: FontAwesome.GITHUB,
       },
     ],
-    status: "ongoing",
+    status: "hidden",
   },
   {
     title: "Imagine Scrum",
@@ -253,7 +253,7 @@ export const Items: ReadonlyArray<Item> = [
         icon: FontAwesome.GITHUB,
       },
     ],
-    status: "ongoing",
+    status: "featured",
   },
   {
     title: "SRG",
@@ -339,6 +339,6 @@ export const Items: ReadonlyArray<Item> = [
         icon: FontAwesome.GITHUB,
       },
     ],
-    status: "ended",
+    status: "featured",
   },
 ];

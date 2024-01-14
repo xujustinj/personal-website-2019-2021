@@ -35,11 +35,11 @@ const FooterContainer = styled.div`
   ${adapt({
     mobile: `
       gap: 16px;
-      font-size: 8pt;
+      font-size: 10pt;
     `,
     desktop: `
       gap: 32px;
-      font-size: 10pt;
+      font-size: 12pt;
     `,
   })}
 
@@ -76,7 +76,7 @@ export const Footer = (props: SectionProps) => (
           Hosted using{" "}
           <Link href="https://aws.amazon.com/amplify/">AWS Amplify</Link>.
         </FooterMessage>
-        <FooterMessage>Last updated August 16, 2023.</FooterMessage>
+        <FooterMessage>Last updated January 14, 2024.</FooterMessage>
       </FooterColumn>
       <FooterColumn>
         <FooterLink
@@ -91,19 +91,11 @@ export const Footer = (props: SectionProps) => (
         >
           LinkedIn
         </FooterLink>
-        <FooterLink
-          href={"https://twitter.com/xujustinj"}
-          icon={FontAwesome.TWITTER}
-        >
-          Twitter
+        <FooterLink href={"/resume.pdf"} icon={FontAwesome.RESUME}>
+          Résumé
         </FooterLink>
-        <span>
-          <FooterLink href={"/resume.pdf"} icon={FontAwesome.RESUME}>
-            Résumé
-          </FooterLink>
-        </span>
         <FooterLink href={"/cv.pdf"} icon={FontAwesome.RESUME}>
-          CV (résumé for nerds)
+          Curriculum Vitae
         </FooterLink>
       </FooterColumn>
     </FooterContainer>

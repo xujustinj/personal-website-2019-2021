@@ -6,7 +6,7 @@ import { CardGrid } from "../components/CardGrid";
 import { EmojiBulletItem } from "../components/EmojiBullet";
 import { Section, SectionHeading } from "../components/Section";
 import { Items } from "../data/Items";
-import ProfileMetrotown from "../public/assets/profile-metrotown.jpg";
+import ProfileKyoto from "../public/assets/profile-kyoto.jpg";
 import { adapt } from "../styles/Adaptive";
 import { Colour } from "../styles/Colours";
 
@@ -20,8 +20,8 @@ const IntroContainer = styled.div`
       flex-direction: row;
     `,
   })}
-  gap: 24px;
-  align-items: center;
+  gap: 32px;
+  align-items: top;
 `;
 
 const IntroIcon = styled.div`
@@ -29,7 +29,7 @@ const IntroIcon = styled.div`
   flex-shrink: 0;
   width: min(200px, 40vw);
   height: min(200px, 40vw);
-  border-radius: 8px;
+  border-radius: 16px;
   overflow: hidden;
 `;
 
@@ -38,120 +38,102 @@ const IntroContent = styled.div`
   flex-direction: column;
   flex-grow: 1;
   flex-shrink: 1;
-  align-items: flex-start;
   gap: 8px;
-`;
+  align-items: flex-start;
 
-const HelloText = styled.h2`
   ${adapt({
     mobile: `
-      font-size: 24pt;
+      font-size: 14pt;
     `,
     desktop: `
-      font-size: 30pt;
+      font-size: 16pt;
+    `,
+  })}
+
+  > * {
+    margin: 0;
+  }
+
+  a {
+    color: inherit
+  }
+`;
+
+const NameText = styled.h2`
+  ${adapt({
+    mobile: `
+      font-size: 36pt;
+    `,
+    desktop: `
+      font-size: 48pt;
     `,
   })}
   line-height: 100%;
-  margin: 0;
-`;
-
-const IntroText = styled.p`
-  ${adapt({
-    mobile: `
-      font-size: 12pt;
-    `,
-    desktop: `
-      font-size: 14pt;
-    `,
-  })}
-  margin: 0;
+  margin-bottom: 8px;
 `;
 
 const Home = () => (
   <>
     <Section
       $foreground="white"
-      $background={Colour({ h: "blue", s: "muted", v: "light" })}
+      $background={Colour({ h: "blue", s: "muted", v: "dark" })}
       id="intro"
     >
       <IntroContainer>
         <IntroIcon>
           <Image
-            src={ProfileMetrotown}
-            alt={"Picture of Justin"}
+            src={ProfileKyoto}
+            alt={"Picture of Justin Xu"}
             width={200}
             height={200}
           />
         </IntroIcon>
         <IntroContent>
-          <HelloText>Hi!👋🏼</HelloText>
-          <IntroText>
-            My name is <b>Justin</b> (he/him), and this is where I show off{" "}
-            everything{" "}
-            <del style={{ color: Colour({ v: "lighter" }) }}>
-              I want employers to know
-            </del>{" "}
-            about me.
-          </IntroText>
+          <NameText>Justin Xu</NameText>
+            <EmojiBulletItem $bullet={"🎓"}>
+              Bachelor&apos;s (&apos;23) {'→'} Master&apos;s in Computer Science @UWaterloo
+            </EmojiBulletItem>
+            <EmojiBulletItem $bullet={"🔎"}>
+              researching knowledge graphs with <Link href={"https://cs.uwaterloo.ca/~ppoupart/"}>Prof. Pascal Poupart</Link>
+            </EmojiBulletItem>
+            <EmojiBulletItem $bullet={"💻"}>
+              writing, <Link
+                href={
+                  "https://medium.com/@xujustinj/my-favourite-tech-stack-is-google-sheets-79a797887b80"
+                }
+              >
+                spreadsheet hacking
+              </Link>, web development
+            </EmojiBulletItem>
+            <EmojiBulletItem $bullet={"🧐"}>
+              perfectionist
+            </EmojiBulletItem>
+            <EmojiBulletItem $bullet={"🕹️"}>
+              bad at video games and bouldering
+            </EmojiBulletItem>
+            <EmojiBulletItem $bullet={"🎂"}>
+              <Link href={"https://youtu.be/42Gtm4-Ax2U"}>twenty-three</Link>
+            </EmojiBulletItem>
         </IntroContent>
       </IntroContainer>
     </Section>
 
-    <Section $foreground="black" $background="white" id="iam">
-      <SectionHeading>{"I'm..."}</SectionHeading>
-      <EmojiBulletItem $bullet={"🎓"}>
-        <IntroText>
-          an incoming Computer Science masters student at UWaterloo
-        </IntroText>
-      </EmojiBulletItem>
-      <EmojiBulletItem $bullet={"💻"}>
-        <IntroText>
-          proficient in web development,{" "}
-          <Link
-            href={
-              "https://medium.com/@xujustinj/my-favourite-tech-stack-is-google-sheets-79a797887b80"
-            }
-          >
-            spreadsheet hacking
-          </Link>
-          , and more
-        </IntroText>
-      </EmojiBulletItem>
-      <EmojiBulletItem $bullet={"🧐"}>
-        <IntroText>
-          a perfectionist who takes too much ownership (haters call it
-          workaholism)
-        </IntroText>
-      </EmojiBulletItem>
-      <EmojiBulletItem $bullet={"🕹️"}>
-        <IntroText>bad at video games and bouldering</IntroText>
-      </EmojiBulletItem>
-      <EmojiBulletItem $bullet={"🎹"}>
-        <IntroText>something of a musician myself</IntroText>
-      </EmojiBulletItem>
-      <EmojiBulletItem $bullet={"🎂"}>
-        <IntroText>
-          <Link href={"https://youtu.be/42Gtm4-Ax2U"}>twenty-three</Link>
-        </IntroText>
-      </EmojiBulletItem>
-    </Section>
-
     <Section
       $foreground="black"
-      $background={Colour({ h: "green", s: "faded", v: "light" })}
+      $background={Colour({ h: "blue", s: "muted", v: "lighter" })}
       id="doing"
     >
-      <SectionHeading>Current Stuff</SectionHeading>
-      <CardGrid items={Items.filter((item) => item.status === "ongoing")} />
+      <SectionHeading>Featured Stuff</SectionHeading>
+      <CardGrid items={Items.filter((item) => item.status === "featured")} />
     </Section>
 
     <Section
-      $foreground="black"
-      $background={Colour({ h: "green", s: "faded", v: "lighter" })}
+      $foreground="white"
+      $background={Colour({ h: "blue", s: "faded", v: "dark" })}
       id="did"
     >
-      <SectionHeading>Past Stuff</SectionHeading>
-      <CardGrid items={Items.filter((item) => item.status === "ended")} />
+      <SectionHeading>Other Stuff</SectionHeading>
+      <CardGrid items={Items.filter((item) => item.status !== "hidden" && item.status !== "featured")} />
     </Section>
   </>
 );
