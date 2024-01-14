@@ -7,7 +7,7 @@ import { FontAwesome } from "../data/FontAwesome";
 import { adapt } from "../styles/Adaptive";
 import { Section, SectionProps } from "./Section";
 
-const IconTextLink = styled.a`
+const IconTextLink = styled(Link)`
   display: flex;
   align-items: center;
   gap: 4px;
@@ -22,13 +22,11 @@ interface FooterLinkProps {
   children: ReactNode;
 }
 const FooterLink = (props: FooterLinkProps) => (
-  <Link href={props.href} passHref>
-    <IconTextLink>
-      {/* fa-fw: fixed width */}
-      <FontAwesomeIcon icon={props.icon} className={"fa-fw"} />
-      {props.children}
-    </IconTextLink>
-  </Link>
+  <IconTextLink href={props.href} passHref>
+    {/* fa-fw: fixed width */}
+    <FontAwesomeIcon icon={props.icon} className={"fa-fw"} />
+    {props.children}
+  </IconTextLink>
 );
 
 const FooterContainer = styled.div`

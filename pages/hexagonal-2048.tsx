@@ -35,7 +35,7 @@ const Game = styled(Embed)`
 const Home = () => {
   return (
     <>
-      <Section foreground="black" background="white" id="intro">
+      <Section $foreground="black" $background="white" id="intro">
         <GameInfo>
           Just like{" "}
           <a href="https://play2048.co/" target={"_blank"} rel="noreferrer">

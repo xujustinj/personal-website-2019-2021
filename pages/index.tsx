@@ -70,8 +70,8 @@ const IntroText = styled.p`
 const Home = () => (
   <>
     <Section
-      foreground="white"
-      background={Colour({ h: "blue", s: "muted", v: "light" })}
+      $foreground="white"
+      $background={Colour({ h: "blue", s: "muted", v: "light" })}
       id="intro"
     >
       <IntroContainer>
@@ -97,14 +97,14 @@ const Home = () => (
       </IntroContainer>
     </Section>
 
-    <Section foreground="black" background="white" id="iam">
+    <Section $foreground="black" $background="white" id="iam">
       <SectionHeading>{"I'm..."}</SectionHeading>
-      <EmojiBulletItem bullet={"🎓"}>
+      <EmojiBulletItem $bullet={"🎓"}>
         <IntroText>
           an incoming Computer Science masters student at UWaterloo
         </IntroText>
       </EmojiBulletItem>
-      <EmojiBulletItem bullet={"💻"}>
+      <EmojiBulletItem $bullet={"💻"}>
         <IntroText>
           proficient in web development,{" "}
           <Link
@@ -117,19 +117,19 @@ const Home = () => (
           , and more
         </IntroText>
       </EmojiBulletItem>
-      <EmojiBulletItem bullet={"🧐"}>
+      <EmojiBulletItem $bullet={"🧐"}>
         <IntroText>
           a perfectionist who takes too much ownership (haters call it
           workaholism)
         </IntroText>
       </EmojiBulletItem>
-      <EmojiBulletItem bullet={"🕹️"}>
+      <EmojiBulletItem $bullet={"🕹️"}>
         <IntroText>bad at video games and bouldering</IntroText>
       </EmojiBulletItem>
-      <EmojiBulletItem bullet={"🎹"}>
+      <EmojiBulletItem $bullet={"🎹"}>
         <IntroText>something of a musician myself</IntroText>
       </EmojiBulletItem>
-      <EmojiBulletItem bullet={"🎂"}>
+      <EmojiBulletItem $bullet={"🎂"}>
         <IntroText>
           <Link href={"https://youtu.be/42Gtm4-Ax2U"}>twenty-three</Link>
         </IntroText>
@@ -137,8 +137,8 @@ const Home = () => (
     </Section>
 
     <Section
-      foreground="black"
-      background={Colour({ h: "green", s: "faded", v: "light" })}
+      $foreground="black"
+      $background={Colour({ h: "green", s: "faded", v: "light" })}
       id="doing"
     >
       <SectionHeading>Current Stuff</SectionHeading>
@@ -146,8 +146,8 @@ const Home = () => (
     </Section>
 
     <Section
-      foreground="black"
-      background={Colour({ h: "green", s: "faded", v: "lighter" })}
+      $foreground="black"
+      $background={Colour({ h: "green", s: "faded", v: "lighter" })}
       id="did"
     >
       <SectionHeading>Past Stuff</SectionHeading>

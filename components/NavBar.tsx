@@ -24,15 +24,15 @@ const NavBarContainer = styled.div`
 `;
 
 interface NavBarSegmentProps {
-  alignment: "start" | "center" | "end";
+  $alignment: "start" | "center" | "end";
 }
 const NavBarSegment = styled.div<NavBarSegmentProps>`
   display: flex;
   align-items: center;
-  justify-content: ${(props) => props.alignment};
+  justify-content: ${(props) => props.$alignment};
 `;
 
-const LogoContainer = styled.span`
+const LogoContainer = styled(Link)`
   width: fit-content;
 
   /* Child Layout */
@@ -41,29 +41,23 @@ const LogoContainer = styled.span`
   gap: 8px;
   padding: 4px;
 
-  p {
-    font-size: 14pt;
-    margin: 0;
-  }
-
-  :hover {
-    cursor: pointer;
-  }
+  font-size: 14pt;
+  margin: 0;
+  text-decoration: none;
+  color: white;
 `;
 const ShieldContainer = styled.span`
   width: 12px;
   height: 18px;
 `;
 const Logo = () => (
-  <Link href="/">
-    <LogoContainer>
-      <p>Justin</p>
-      <ShieldContainer>
-        <Image src={Shield} alt={"logo"} width={12} height={18} />
-      </ShieldContainer>
-      <p>Xu</p>
-    </LogoContainer>
-  </Link>
+  <LogoContainer href="/">
+    Justin
+    <ShieldContainer>
+      <Image src={Shield} alt={"logo"} width={12} height={18} />
+    </ShieldContainer>
+    Xu
+  </LogoContainer>
 );
 
 const PageTitle = styled.h1`
@@ -77,13 +71,13 @@ export interface NavBarProps {
 }
 const NavBar = (props: NavBarProps) => (
   <NavBarContainer>
-    <NavBarSegment alignment="start">
+    <NavBarSegment $alignment="start">
       <Logo />
     </NavBarSegment>
-    <NavBarSegment alignment="center">
+    <NavBarSegment $alignment="center">
       <PageTitle>{props.title}</PageTitle>
     </NavBarSegment>
-    <NavBarSegment alignment="end" />
+    <NavBarSegment $alignment="end" />
   </NavBarContainer>
 );
 

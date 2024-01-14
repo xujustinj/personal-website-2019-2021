@@ -2,12 +2,12 @@ import styled from "styled-components";
 import { adapt } from "../styles/Adaptive";
 
 export interface SectionProps {
-  foreground: string;
-  background: string;
+  $foreground: string;
+  $background: string;
 }
 export const Section = styled.div<SectionProps>`
-  color: ${(props) => props.foreground};
-  background: ${(props) => props.background};
+  color: ${(props) => props.$foreground};
+  background: ${(props) => props.$background};
   ${adapt({
     mobile: `
       padding-left: max(calc(100% / 18), 16px);
