@@ -76,7 +76,7 @@ export const Footer = (props: SectionProps) => (
           Hosted using{" "}
           <Link href="https://aws.amazon.com/amplify/">AWS Amplify</Link>.
         </FooterMessage>
-        <FooterMessage>Last updated January 14, 2024.</FooterMessage>
+        <FooterMessage>Last updated February 5, 2024.</FooterMessage>
       </FooterColumn>
       <FooterColumn>
         <FooterLink
