@@ -39,6 +39,10 @@ export default class _Document extends Document {
             href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap"
             rel="stylesheet"
           />
+          <link
+            href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap"
+            rel="stylesheet"
+          />
           <Favicons />
         </Head>
         <body>

@@ -31,7 +31,9 @@ const NavBarSegment = styled.div<NavBarSegmentProps>`
 `;
 
 const LogoContainer = styled(Link)`
+  font-family: "IBM Plex Mono", monospace;
   font-size: 14pt;
+  font-weight: bold;
   margin: 4px;
   text-decoration: none;
   color: white;
