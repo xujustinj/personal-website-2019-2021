@@ -24,7 +24,18 @@ const IntroContainer = styled.div`
   align-items: top;
 `;
 
+const LightBG = Colour({h: "blue", s: "faded", v: "offwhite"})
+const DarkBG = Colour({ h: "blue", s: "faded", v: "darkest" })
+
 const IntroIcon = styled.div`
+  ${adapt({
+    mobile: `
+      display: none;
+    `,
+    desktop: `
+      display: inline;
+    `,
+  })}
   flex-grow: 0;
   flex-shrink: 0;
   width: min(200px, 40vw);
@@ -43,10 +54,10 @@ const IntroContent = styled.div`
 
   ${adapt({
     mobile: `
-      font-size: 14pt;
+      font-size: 12pt;
     `,
     desktop: `
-      font-size: 16pt;
+      font-size: 14pt;
     `,
   })}
 
@@ -62,10 +73,10 @@ const IntroContent = styled.div`
 const NameText = styled.h2`
   ${adapt({
     mobile: `
-      font-size: 36pt;
+      font-size: 24pt;
     `,
     desktop: `
-      font-size: 48pt;
+      font-size: 36pt;
     `,
   })}
   line-height: 100%;
@@ -75,8 +86,8 @@ const NameText = styled.h2`
 const Home = () => (
   <>
     <Section
-      $foreground="white"
-      $background={Colour({ h: "blue", s: "muted", v: "darker" })}
+      $foreground="black"
+      $background={LightBG}
       id="intro"
     >
       <IntroContainer>
@@ -91,7 +102,7 @@ const Home = () => (
         <IntroContent>
           <NameText>Justin Xu</NameText>
             <EmojiBulletItem $bullet={"🎓"}>
-              Bachelor&apos;s (&apos;23) {'→'} Master&apos;s in Computer Science @UWaterloo
+              MMath Computer Science student @UWaterloo
             </EmojiBulletItem>
             <EmojiBulletItem $bullet={"🔎"}>
               researching knowledge graphs with <Link href={"https://cs.uwaterloo.ca/~ppoupart/"}>Prof. Pascal Poupart</Link>
@@ -105,32 +116,26 @@ const Home = () => (
                 spreadsheet hacking
               </Link>, web development
             </EmojiBulletItem>
-            <EmojiBulletItem $bullet={"🧐"}>
-              perfectionist
-            </EmojiBulletItem>
             <EmojiBulletItem $bullet={"🕹️"}>
               bad at video games and bouldering
-            </EmojiBulletItem>
-            <EmojiBulletItem $bullet={"🎂"}>
-              <Link href={"https://youtu.be/42Gtm4-Ax2U"}>twenty-three</Link>
             </EmojiBulletItem>
         </IntroContent>
       </IntroContainer>
     </Section>
 
     <Section
-      $foreground="black"
-      $background={Colour({ h: "blue", s: "muted", v: "lighter" })}
-      id="doing"
+      $foreground="white"
+      $background={DarkBG}
+      id="featured"
     >
       <SectionHeading>Featured Stuff</SectionHeading>
       <CardGrid items={Items.filter((item) => item.status === "featured")} />
     </Section>
 
     <Section
-      $foreground="white"
-      $background={Colour({ h: "blue", s: "faded", v: "dark" })}
-      id="did"
+      $foreground="black"
+      $background={LightBG}
+      id="other"
     >
       <SectionHeading>Other Stuff</SectionHeading>
       <CardGrid items={Items.filter((item) => item.status !== "hidden" && item.status !== "featured")} />

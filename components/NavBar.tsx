@@ -1,6 +1,6 @@
 import Link from "next/link";
 import styled from "styled-components";
-import { primary } from "../styles/Colours";
+import { Colour } from "../styles/Colours";
 
 // The NavBar is split into three segments: left, centre, and right.
 const NavBarContainer = styled.div`
@@ -17,7 +17,7 @@ const NavBarContainer = styled.div`
   padding-right: 16px;
 
   /* Appearance */
-  background-color: ${primary};
+  background-color: ${Colour({ h: "blue", s: "muted", v: "dark" })};
   color: white;
 `;
 

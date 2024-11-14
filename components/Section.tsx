@@ -27,8 +27,8 @@ export const Section = styled.div<SectionProps>`
 
 export const SectionHeading = styled.h2`
   ${adapt({
-    mobile: `font-size: 18pt;`,
-    desktop: `font-size: 24pt;`,
+    mobile: `font-size: 16pt;`,
+    desktop: `font-size: 20pt;`,
   })}
   font-weight: 700;
   margin-top: 0;

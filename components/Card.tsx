@@ -92,6 +92,7 @@ const CardTitleRow = styled.div`
   display: flex;
   align-items: start;
   justify-content: space-between;
+  height: 20px;
 `;
 
 const CardTitle = styled.h3`
@@ -100,18 +101,15 @@ const CardTitle = styled.h3`
   /* Font */
   font-weight: 700;
   font-size: 12pt;
-  line-height: 13pt;
+  height: 20px;
 `;
 
 const CardLinks = styled.div`
   /* Flex */
   display: flex;
   flex-direction: row;
-  gap: 2px;
-
-  /* Appearance */
-  color: ${primary};
-  font-size: 13pt;
+  gap: 4px;
+  height: 20px;
 `;
 
 const CardSubtitle = styled.p`
@@ -140,6 +138,11 @@ const CardTags = styled.div`
 `;
 
 const Icon = styled(FontAwesomeIcon)`
+  /* Appearance */
+  font-size: 10pt;
+  color: ${primary};
+  height: 20px;
+
   :hover {
     cursor: pointer;
   }

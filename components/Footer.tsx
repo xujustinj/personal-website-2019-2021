@@ -68,7 +68,7 @@ export const Footer = (props: SectionProps) => (
     <FooterContainer>
       <FooterColumn>
         <FooterMessage>
-          Custom-made by myself using{" "}
+          Custom-made using{" "}
           <Link href="https://nextjs.org/">Next.js</Link> and{" "}
           <Link href="https://styled-components.com/">styled-components</Link>.
         </FooterMessage>
@@ -76,7 +76,7 @@ export const Footer = (props: SectionProps) => (
           Hosted using{" "}
           <Link href="https://aws.amazon.com/amplify/">AWS Amplify</Link>.
         </FooterMessage>
-        <FooterMessage>Last updated February 5, 2024.</FooterMessage>
+        <FooterMessage>Last updated November 13, 2024.</FooterMessage>
       </FooterColumn>
       <FooterColumn>
         <FooterLink

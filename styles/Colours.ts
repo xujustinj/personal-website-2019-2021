@@ -20,11 +20,15 @@ export type Saturation = keyof typeof Saturations;
 
 const Values = {
   white: 100,
+  offwhite: 95,
+  lightest: 90,
   lighter: 80,
   light: 60,
   medium: 50,
   dark: 40,
   darker: 20,
+  darkest: 10,
+  offblack: 5,
   black: 0,
 };
 export type Value = keyof typeof Values;
